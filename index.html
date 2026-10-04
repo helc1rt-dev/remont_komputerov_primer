@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Компьютерный Мастер — ремонт ПК и ноутбуков в Москве</title>
+    <meta
+      name="description"
+      content="Профессиональный ремонт компьютеров и ноутбуков в Москве. Выезд на дом за 30 минут. Диагностика бесплатно."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ink: "#0F172A",
+              accent: "#1E3A8A",
+              line: "#E5E7EB",
+              mute: "#64748B",
+            },
+            fontFamily: {
+              sans: ["Inter", "system-ui", "sans-serif"],
+            },
+            boxShadow: {
+              cta: "0 8px 24px rgba(30, 58, 138, 0.18)",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-white text-ink font-sans antialiased">
+    <header class="sticky top-0 z-50 border-b border-line bg-white/95 backdrop-blur">
+      <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-4">
+        <a href="#top" class="text-lg font-semibold tracking-tight">Компьютерный Мастер</a>
+
+        <nav class="hidden items-center gap-6 md:flex" aria-label="Основное меню">
+          <a href="#services" class="text-sm text-mute transition hover:text-accent">Услуги</a>
+          <a href="tel:+74951234567" class="text-sm font-medium">+7 (495) 123-45-67</a>
+          <a
+            href="#contact"
+            class="rounded-xl bg-accent px-4 py-2 text-sm font-medium text-white transition hover:bg-white hover:text-accent hover:ring-1 hover:ring-accent"
+          >
+            Связаться
+          </a>
+        </nav>
+
+        <button
+          id="menu-button"
+          class="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-line md:hidden"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="Открыть меню"
+        >
+          <svg id="icon-open" class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+          <svg id="icon-close" class="hidden h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 6l12 12M18 6L6 18" />
+          </svg>
+        </button>
+      </div>
+
+      <div id="mobile-menu" class="hidden border-t border-line bg-white px-5 py-4 md:hidden">
+        <div class="flex flex-col gap-4">
+          <a href="#services" class="text-sm text-mute">Услуги</a>
+          <a href="tel:+74951234567" class="text-sm font-medium">+7 (495) 123-45-67</a>
+          <a
+            href="#contact"
+            class="rounded-xl bg-accent px-4 py-3 text-center text-sm font-medium text-white"
+          >
+            Связаться
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="border-b border-line">
+        <div class="mx-auto grid max-w-6xl items-center gap-12 px-5 py-20 md:grid-cols-2 md:py-28">
+          <div>
+            <p class="mb-4 text-sm font-medium uppercase tracking-[0.16em] text-accent">Москва · выезд на дом</p>
+            <h1 class="max-w-xl text-4xl font-semibold leading-tight tracking-tight md:text-5xl">
+              Профессиональный ремонт ПК и ноутбуков в Москве
+            </h1>
+            <p class="mt-5 max-w-lg text-lg leading-relaxed text-mute">
+              Выезд на дом за 30 минут. Диагностика бесплатно.
+            </p>
+            <a
+              href="#contact"
+              class="mt-8 inline-flex rounded-xl bg-accent px-6 py-3 text-sm font-medium text-white shadow-cta transition hover:bg-white hover:text-accent hover:ring-1 hover:ring-accent"
+            >
+              Вызвать мастера
+            </a>
+          </div>
+
+          <div class="rounded-2xl border border-line p-8">
+            <div class="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-accent/10 text-accent">
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="4" width="18" height="12" rx="2" stroke-width="1.5" />
+                <path stroke-linecap="round" stroke-width="1.5" d="M8 20h8M12 16v4" />
+              </svg>
+            </div>
+            <p class="text-sm leading-relaxed text-mute">
+              Чиним системные блоки, ноутбуки и моноблоки. Работаем аккуратно, с понятной сметой до начала ремонта.
+            </p>
+            <div class="mt-8 grid grid-cols-2 gap-4 border-t border-line pt-6">
+              <div>
+                <p class="text-2xl font-semibold">30 мин</p>
+                <p class="mt-1 text-sm text-mute">выезд по Москве</p>
+              </div>
+              <div>
+                <p class="text-2xl font-semibold">0 ₽</p>
+                <p class="mt-1 text-sm text-mute">диагностика на месте</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="mx-auto max-w-6xl px-5 py-20 md:py-24">
+        <div class="mb-12 max-w-2xl">
+          <h2 class="text-3xl font-semibold tracking-tight">Услуги</h2>
+          <p class="mt-3 text-mute">Три самых частых запроса. Остальные работы — после бесплатной диагностики.</p>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-3">
+          <article class="rounded-2xl border border-line p-7 transition hover:-translate-y-1 hover:shadow-md">
+            <div class="mb-5 flex h-11 w-11 items-center justify-center rounded-xl bg-accent/10 text-accent">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="4" width="18" height="14" rx="2" stroke-width="1.5" />
+                <path stroke-linecap="round" stroke-width="1.5" d="M8 20h8" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 11l2.2 2.2L16 8" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold">Переустановка Windows</h3>
+            <p class="mt-2 text-sm leading-relaxed text-mute">
+              Чистая установка, драйверы и перенос ваших файлов. Компьютер снова работает быстро и без ошибок.
+            </p>
+            <p class="mt-6 text-sm font-medium text-accent">от 1 500 ₽</p>
+          </article>
+
+          <article class="rounded-2xl border border-line p-7 transition hover:-translate-y-1 hover:shadow-md">
+            <div class="mb-5 flex h-11 w-11 items-center justify-center rounded-xl bg-accent/10 text-accent">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 3v3M12 18v3M4.9 6.3l2.1 2.1M17 15.6l2.1 2.1M3 12h3M18 12h3M4.9 17.7l2.1-2.1M17 8.4l2.1-2.1" />
+                <circle cx="12" cy="12" r="3.2" stroke-width="1.5" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold">Чистка от пыли</h3>
+            <p class="mt-2 text-sm leading-relaxed text-mute">
+              Снимаем перегрев: продувка, замена термопасты, проверка вентиляторов. Ноутбук перестаёт шуметь и тормозить.
+            </p>
+            <p class="mt-6 text-sm font-medium text-accent">от 1 200 ₽</p>
+          </article>
+
+          <article class="rounded-2xl border border-line p-7 transition hover:-translate-y-1 hover:shadow-md">
+            <div class="mb-5 flex h-11 w-11 items-center justify-center rounded-xl bg-accent/10 text-accent">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="4" y="5" width="16" height="14" rx="1.5" stroke-width="1.5" />
+                <path stroke-linecap="round" stroke-width="1.5" d="M8 9h8M8 12h5" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold">Сборка ПК</h3>
+            <p class="mt-2 text-sm leading-relaxed text-mute">
+              Подберём комплектующие под задачу и бюджет, соберём и настроим. Игры, офис или монтаж — без лишних трат.
+            </p>
+            <p class="mt-6 text-sm font-medium text-accent">от 4 000 ₽</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="border-t border-line bg-slate-50">
+      <div class="mx-auto grid max-w-6xl gap-10 px-5 py-12 md:grid-cols-3">
+        <div>
+          <p class="font-semibold">Компьютерный Мастер</p>
+          <p class="mt-2 max-w-xs text-sm leading-relaxed text-mute">
+            Ремонт компьютеров и ноутбуков в Москве. Работаем ежедневно с 9:00 до 21:00.
+          </p>
+        </div>
+
+        <div>
+          <p class="text-sm font-medium">Контакты</p>
+          <a href="tel:+74951234567" class="mt-3 block text-sm hover:text-accent">+7 (495) 123-45-67</a>
+          <p class="mt-2 text-sm text-mute">Москва, ул. Тверская, 7</p>
+        </div>
+
+        <div>
+          <p class="text-sm font-medium">Мессенджеры</p>
+          <div class="mt-3 flex gap-4 text-sm">
+            <a href="https://t.me/" class="hover:text-accent" target="_blank" rel="noreferrer">Telegram</a>
+            <a href="https://wa.me/74951234567" class="hover:text-accent" target="_blank" rel="noreferrer">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-line">
+        <p class="mx-auto max-w-6xl px-5 py-5 text-xs text-mute">
+          © 2026 Компьютерный Мастер. Все права защищены.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      const button = document.getElementById("menu-button");
+      const menu = document.getElementById("mobile-menu");
+      const iconOpen = document.getElementById("icon-open");
+      const iconClose = document.getElementById("icon-close");
+
+      function setMenu(open) {
+        menu.classList.toggle("hidden", !open);
+        iconOpen.classList.toggle("hidden", open);
+        iconClose.classList.toggle("hidden", !open);
+        button.setAttribute("aria-expanded", String(open));
+        button.setAttribute("aria-label", open ? "Закрыть меню" : "Открыть меню");
+      }
+
+      button.addEventListener("click", () => {
+        setMenu(menu.classList.contains("hidden"));
+      });
+
+      menu.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => setMenu(false));
+      });
+    </script>
+  </body>
+</html>
